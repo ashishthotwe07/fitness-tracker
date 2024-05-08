@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import router from "./routes/User.js";
 
 // Load environment variables
 dotenv.config();
@@ -21,7 +22,8 @@ mongoose
   .catch((err) => console.error("MongoDB connection error:", err));
 
 // Routes
-// Example route
+
+app.use("/api/user/", router);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
