@@ -1,4 +1,19 @@
 {
+  "name": "fitness-tracker-app",
+  "version": "1.0.0",
+  "description": "A fitness tracker app to help you monitor your workouts and progress.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "fitness",
+    "tracker",
+    "workout",
+    "exercise",
+    "health"
+  ],
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
